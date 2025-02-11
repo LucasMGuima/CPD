@@ -1,0 +1,16 @@
+1_ Escrever um programa que encontra o maior elemento
+do vetor em paralelo.
+Não usar:   Usar:
+max,        OpenMP
+reduce,
+map
+
+2_ Escrever um programa que some dois vetores
+a[i]=b[i]+c[i] em paralelo
+
+3_ Implementar o algoritm para encontra o menor elemento
+do vetor, utilizando o modelo CRCW comum
+
+4_ Escrever uma função map que aplique uma função em todos
+os elementos do vetor
+map(vetor, dobro);
