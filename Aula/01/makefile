@@ -15,6 +15,11 @@ ex03:
 	gcc ./source/menorElemento.c -o ex_03.exe -fopenmp
 	@ ./ex_03.exe
 	@ rm -f ./ex_03.exe
-	
+
+ex04:
+	gcc ./source/map.c -o ex_04.exe -fopenmp
+	@ ./ex_04.exe
+	@ rm -f ./ex_04.exe	
+
 clean:
 	@ rm -f ./*.exe
