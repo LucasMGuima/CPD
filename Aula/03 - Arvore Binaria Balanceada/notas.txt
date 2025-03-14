@@ -1,0 +1,7 @@
+Forkjoin
+    Faz as partes em paralelo e uni tudo no final da mesma (for em paralelo);
+
+O(n log n) -> MAX (Sequencial) 
+O(log n) -> MAX (Paralelo)
+Assumimos que o numero de processadores sempre é muito menor que a quantidade de processos [p << n]
+log é base dois no MAX, por dividir em 2 o vetor
