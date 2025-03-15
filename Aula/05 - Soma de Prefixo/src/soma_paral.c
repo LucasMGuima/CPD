@@ -39,3 +39,20 @@ int* soma_de_prefixos_paralela(int *in, int n){
 
     return out;
 }
+
+void soma_de_prefixos_nOtima(int *in, int ini, int end){
+    if(ini >= end){
+        return;
+    }
+
+    int meio = floor((ini + end)/2);
+    #pragma omp parallel
+    {
+        soma_de_prefixos_nOtima(in, ini, meio);
+        soma_de_prefixos_nOtima(in, meio+1, end);
+    }
+
+    for(int i = meio + 1; i <= end; i++){
+        in[i] += in[meio];
+    }
+}
